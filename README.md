@@ -41,7 +41,17 @@ CIS 9440 Assignment 1 – NYC 311 Data Sourcing (December 2023)
 - Imported directly into MySQL
 - This method ensured all rows from December 2023 were properly stored in MySQL.
  
-
-
-- No Python scripts were required; CSV import via MySQL Workbench satisfies the assignment requirements.  
-- All data is stored locally and properly organized within the `service_requests` table.  
+**Table Details:**  
+- Table name: `service_requests`  
+- Columns:  
+  - `request_id` (INT, AUTO_INCREMENT, PRIMARY KEY)  
+  - `created_date` (VARCHAR(50))  
+  - `closed_date` (VARCHAR(50))  
+  - `agency` (VARCHAR(100))  
+  - `complaint_type` (VARCHAR(100))  
+  - `descriptor` (VARCHAR(255))  
+  - `city` (VARCHAR(100))  
+  - `status` (VARCHAR(50))  
+  - `borough` (VARCHAR(50))  
+  - `latitude` (VARCHAR(50))  
+  - `longitude` (VARCHAR(50))
