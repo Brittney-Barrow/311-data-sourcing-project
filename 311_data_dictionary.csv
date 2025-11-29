@@ -1,0 +1,19 @@
+Field Name,Data Type,Description,Source Column,Destination Column
+request_id,Integer,Unique identifier for each request,index,request_id
+created_date,Date,Date the request was created,created_date,created_date
+closed_date,Date,Date the request was closed,closed_date,closed_date
+agency,String,Agency handling the request,agency,agency
+complaint_type,String,Type of complaint,complaint_type,complaint_type
+descriptor,String,Detailed descriptor of the complaint,descriptor,descriptor
+city,String,City of the incident,city,city
+status,String,Current status of the request,status,status
+borough,String,Borough of the incident,borough,borough
+latitude,Float,Latitude coordinate of the incident,latitude,latitude
+longitude,Float,Longitude coordinate of the incident,longitude,longitude
+location,String,Full address/location description,location,location
+year,Integer,Year the request was created,created_date,year
+month,Integer,Month the request was created,created_date,month
+day,Integer,Day of the month the request was created,created_date,day
+hour,Integer,Hour of the day the request was created,created_date,hour
+year_month,String,Combined year and month,year+month,year_month
+duration_days,Integer,Number of days between created and closed date,closed_date-created_date,duration_days
